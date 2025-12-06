@@ -15,7 +15,7 @@ function renderUser(user) {
 }
 
 function renderError(message) {
-  root.innerHTML = `<p class="muted">${message}</p>`;
+  root.innerHTML = `<p style="{color: white;}">${message}</p>`;
 }
 
 function init() {
