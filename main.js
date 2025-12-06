@@ -27,6 +27,7 @@ function init() {
   }
 
   tg.ready();
+  tg.disableVerticalSwipes();
   tg.expand();
   const user = tg.initDataUnsafe?.user;
 
