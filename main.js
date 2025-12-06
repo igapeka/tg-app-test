@@ -5,13 +5,15 @@ function renderUser(user) {
   const name = [user.first_name, user.last_name].filter(Boolean).join(' ');
   const username = user.username ? `@${user.username}` : '—';
 
-  root.innerHTML = `
+  document.body.append(
+    `
     <main>
       <section><h1>${name || 'Unknown user'}</h1></section>
       <section><h1>${user.id ?? 'Unknown'}</h1></section>
       <section><h1>${username}</h1></section>
     </main>
-  `;
+  `
+  );
 }
 
 function renderError(message) {
