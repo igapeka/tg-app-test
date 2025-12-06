@@ -6,12 +6,10 @@ function renderUser(user) {
   const username = user.username ? `@${user.username}` : '—';
 
   document.body.insertAdjacentHTML('beforeend',
-    `
-    <main>
-      <section><h1>${name || 'Unknown user'}</h1></section>
-      <section><h1>${user.id ?? 'Unknown'}</h1></section>
-      <section><h1>${username}</h1></section>
-    </main>
+  `
+    <section><h1>${name || 'Unknown user'}</h1></section>
+    <section><h1>${user.id ?? 'Unknown'}</h1></section>
+    <section><h1>${username}</h1></section>
   `
   );
 }
