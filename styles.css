@@ -12,7 +12,9 @@
 
 body {
   background: black;
-  padding: var(--offset);
+  padding-block-start: calc(var(--offset)+env(safe-area-inset-top));
+  padding-block-end: calc(var(--offset)+env(safe-area-inset-bottom));
+  padding-inline: var(--offset);
   height: 100dvh;
   &::-webkit-scrollbar {
     display: none;
