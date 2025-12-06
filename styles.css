@@ -12,9 +12,10 @@
 
 body {
   background: black;
-  padding-block-start: calc(var(--offset)+var(--tg-safe-area-inset-top));
-  padding-block-end: calc(var(--offset)+var(--tg-safe-area-inset-bottom));
-  padding-inline: var(--offset);
+  padding-top: calc(var(--offset)+var(--tg-safe-area-inset-top));
+  padding-bottom: calc(var(--offset)+var(--tg-safe-area-inset-bottom));
+  padding-left: var(--offset);
+  padding-right: var(--offset);
   height: 100dvh;
   &::-webkit-scrollbar {
     display: none;
