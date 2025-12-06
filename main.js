@@ -6,18 +6,11 @@ function renderUser(user) {
   const username = user.username ? `@${user.username}` : '—';
 
   root.innerHTML = `
-    <div>
-      <div class="label">Name</div>
-      <div class="value">${name || 'Unknown user'}</div>
-    </div>
-    <div>
-      <div class="label">User ID</div>
-      <div class="value">${user.id ?? 'Unknown'}</div>
-    </div>
-    <div>
-      <div class="label">Username</div>
-      <div class="value">${username}</div>
-    </div>
+    <main>
+      <section><h1>${name || 'Unknown user'}</h1></section>
+      <section><h1>${user.id ?? 'Unknown'}</h1></section>
+      <section><h1>${username}</h1></section>
+    </main>
   `;
 }
 
