@@ -5,7 +5,7 @@ function renderUser(user) {
   const name = [user.first_name, user.last_name].filter(Boolean).join(' ');
   const username = user.username ? `@${user.username}` : '—';
 
-  document.body.append(
+  document.body.insertAdjacentHTML('beforeend',
     `
     <main>
       <section><h1>${name || 'Unknown user'}</h1></section>
@@ -17,7 +17,7 @@ function renderUser(user) {
 }
 
 function renderError(message) {
-  document.body.append(
+  document.body.insertAdjacentHTML('beforeend',
     `<p style="color: white;">${message}</p>`
   );
 }
