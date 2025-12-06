@@ -8,12 +8,15 @@
 html {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   scroll-snap-type: y mandatory;
+  scrollbar-width: none;
 }
 
 body {
   background: black;
   height: 100dvh;
-  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 section {
