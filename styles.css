@@ -13,6 +13,7 @@ html {
 body {
   background: black;
   height: 100dvh;
+  scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
   }
