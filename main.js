@@ -17,7 +17,9 @@ function renderUser(user) {
 }
 
 function renderError(message) {
-  root.innerHTML = `<p style="{color: white;}">${message}</p>`;
+  document.body.append(
+    `<p style="{color: white;}">${message}</p>`
+  );
 }
 
 function init() {
