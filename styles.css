@@ -12,7 +12,8 @@
 
 body {
   background: black;
-  padding-bottom: calc(var(--offset) + var(--tg-safe-area-inset-bottom));
+  padding-top: var(--tg-safe-area-inset-top);
+  padding-bottom: var(--tg-safe-area-inset-bottom);
   padding-left: var(--offset);
   padding-right: var(--offset);
   height: 100dvh;
