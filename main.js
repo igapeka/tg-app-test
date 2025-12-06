@@ -5,8 +5,6 @@ function renderUser(user) {
   const name = [user.first_name, user.last_name].filter(Boolean).join(' ');
   const username = user.username ? `@${user.username}` : '—';
 
-  document.body.style.paddingTop = `calc(var(--offset) + ${tg.contentSafeAreaInset.top}px)`;
-
   document.body.insertAdjacentHTML('beforeend',
     `
     <main>
