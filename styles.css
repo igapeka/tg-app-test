@@ -21,7 +21,8 @@ body {
 section {
   display: grid;
   place-items: center;
-  width: 100%;
+  max-width: 600px;
+  margin: auto;
   height: 85%;
   background: lightblue;
   border-radius: 24px;
