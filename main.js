@@ -18,7 +18,7 @@ function renderUser(user) {
 
 function renderError(message) {
   document.body.append(
-    `<p style="{color: white;}">${message}</p>`
+    `<p style="color: white;">${message}</p>`
   );
 }
 
