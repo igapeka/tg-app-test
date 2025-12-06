@@ -6,6 +6,17 @@ This lightweight Telegram mini app displays the current user's ID, name, and use
 
 No build step is required. Serve the repository root over HTTPS or open `index.html` from Telegram's mini app hosting.
 
+### Environment variables
+
+Store Telegram secrets such as your bot token or WebApp secret in a local `.env` file (ignored by Git):
+
+```
+BOT_TOKEN=your_bot_token_here
+WEBAPP_SECRET=your_webapp_secret_here
+```
+
+Load these variables into your hosting environment without committing the `.env` file.
+
 ### GitHub Pages
 
 This repository ships with a GitHub Actions workflow that publishes the static files to GitHub Pages when you push to the `main` branch.
