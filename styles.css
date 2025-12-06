@@ -12,7 +12,6 @@
 
 body {
   background: black;
-  padding-top: calc(var(--offset) + var(--tg-safe-area-inset-top) + 8px);
   padding-bottom: calc(var(--offset) + var(--tg-safe-area-inset-bottom));
   padding-left: var(--offset);
   padding-right: var(--offset);
