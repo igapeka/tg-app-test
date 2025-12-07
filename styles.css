@@ -24,7 +24,7 @@ section {
   place-items: center;
   max-width: 600px;
   margin: auto;
-  height: 95%;
+  height: 90%;
   background: lightblue;
   border-radius: 24px;
   scroll-snap-align: start;
